@@ -20,6 +20,8 @@ PKG_FILE_LINUX="hyper-linux-x86_64.tar.gz"
 PKG_FILE_MACOSX="hyper-mac.bin.zip"
 SUPPORT_EMAIL="support@hyper.sh"
 #Color Constant
+# ... but only if tput binary is present:
+[[ ! -x `which tput` ]] && alias tput="/bin/true"
 RED=`tput setaf 1`
 GREEN=`tput setaf 2`
 YELLOW=`tput setaf 3`

@@ -35,7 +35,7 @@ DEBIAN_CODE=(jessie wheezy)
 CENTOS_VER=(6 7)
 FEDORA_VER=(20 21 22 23 24 25)
 #Color Constant
-# ... but only if tput is present:
+# ... but only if tput binary is present:
 [[ ! -x `which tput` ]] && alias tput="/bin/true"
 RED=`tput setaf 1`
 GREEN=`tput setaf 2`
